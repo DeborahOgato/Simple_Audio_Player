@@ -25,10 +25,10 @@ volumeSlider.addEventListener('input', () => {
 }); 
 
 audio.addEventListener('timeupdate', () => {
-    const currentTime = formatTime(audio.currentTime);
-    const duration = formatTime(audio.duration);
-    timeDisplay.textContent = currentTime;
-    durationDisplay.textContent = duration;
+    if (!isNaN(audio.duration)) {
+        timeDisplay.textContent = formatTime(audio.currentTime);
+        durationDisplay.textContent = formatTime(audio.duration);
+    }
 });
 
 function formatTime(seconds) {

@@ -11,20 +11,20 @@
     <h2>Audio Player</h2>
 
     <audio id="audio">
-        <source scr="audio.pm3" type="audio/mpeg">
+        <source src="audio.pm3" type="audio/mpeg">
     </audio>
 
     <div class="controls">
-        <button id="playButton">Play</button>
-        <button id="muteButton">Mute</button>
+        <button id="playButton">▶ Play</button>
+        <button id="muteButton">🔇Mute</button>
     </div>
 
-    <div>
-        <input type="range" id="volume" min="0" max="100">
+    <div class="volume-container">
         <label for="volume">Volume</label>
+        <input type="range" id="volume" min="0" max="100" value="50">
     </div>
 
-    <p> <span id="time">00:00</span> / <span id="duration">00:00</span></p>
+    <p><span id="time">00:00</span> / <span id="duration">00:00</span></p>
 
 </div>
 
