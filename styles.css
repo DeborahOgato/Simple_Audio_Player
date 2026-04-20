@@ -1,0 +1,35 @@
+body {
+    font-family: monospace;
+    background: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.player {
+    background: #301745;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    width: 300px;
+}
+button {
+    background: #5a189a;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #7b2ff7;
+}
+input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
